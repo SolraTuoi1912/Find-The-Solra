@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://kn57mc1s88fv"]
+
+[ext_resource type="Texture2D" uid="uid://b4h5f0g15216m" path="res://Sprites/Cameo/Hasami.png" id="1_ycml4"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_u1jef"]
+
+[resource]
+script = ExtResource("2_u1jef")
+id = "hasami"
+item_type = 1
+display_name = "Hasami"
+description = "Chị gái của Solra. Đang làm việc bàn giấy tại một công ty nào đó. Khéo trong cắt giấy và làm việc vặt.
+Nếu bạn hoàn thành thử thách của chị ấy? Tuyệt, chúc mừng bạn đã xong \"Khóa Parkour cơ bản\" XD."
+icon_texture = ExtResource("1_ycml4")
+main_texture = ExtResource("1_ycml4")
+dialogue_text = "Good job on completing my room!"
+difficulty = 152
+difficulty_rank_name = "Trung Bình"
+location_hint = "Phòng Kéo"
+character_lore = "Chị gái của Solra. Đang làm việc bàn giấy tại một công ty nào đó. Khéo trong cắt giấy và làm việc vặt."

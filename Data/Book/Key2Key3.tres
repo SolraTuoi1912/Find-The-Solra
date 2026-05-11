@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://dcx50vod0dhvq"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_5wwdl"]
+
+[resource]
+script = ExtResource("1_5wwdl")
+book_id = "key2key3"
+pages = Array[Dictionary]([{
+"text": "The_next_book_contain_key!"
+}])

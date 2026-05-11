@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://co44xid0ab0uu"]
+
+[ext_resource type="Texture2D" uid="uid://ct56wtrl1emup" path="res://Sprites/Cameo/Gemi.png" id="1_abh54"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_2o8wn"]
+
+[resource]
+script = ExtResource("2_2o8wn")
+id = "gemi"
+item_type = 1
+display_name = "Gemi"
+description = "Một trợ thủ đắc lực của Solra trong việc tạo ra tòa tháp này. Hiện đang ở một nơi sâu hoắm."
+icon_texture = ExtResource("1_abh54")
+main_texture = ExtResource("1_abh54")
+difficulty = 520
+difficulty_rank_name = "Rất Khó"
+location_hint = "Phòng Kéo"

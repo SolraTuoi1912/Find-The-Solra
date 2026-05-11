@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cudqmkyixvvxt"
+path="res://.godot/imported/Crazy Collected.mp3-a45f25f8238420f94fe07c1b3f0dc89b.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Crazy Collected.mp3"
+dest_files=["res://.godot/imported/Crazy Collected.mp3-a45f25f8238420f94fe07c1b3f0dc89b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

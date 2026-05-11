@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://b7ep1cvq6so81"]
+
+[ext_resource type="Texture2D" uid="uid://drocreb0adxls" path="res://Sprites/Solra/Real_Life_Solra.png" id="1_n1rkh"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_4tdm3"]
+
+[resource]
+script = ExtResource("2_4tdm3")
+id = "solra_real_life"
+display_name = "Real Life Solra"
+description = "Thằng tác giả con game này. Một kẻ... không ai có thể tìm ra."
+icon_texture = ExtResource("1_n1rkh")
+main_texture = ExtResource("1_n1rkh")
+interaction_type = 2
+correct_answer = "Dec 19th, a guy has been born"
+is_global_code = true
+difficulty = 1000
+difficulty_rank_name = "???"
+location_hint = "???"
+character_lore = "???"

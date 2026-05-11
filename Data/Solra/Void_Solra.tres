@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://c3o4y05k31lu5"]
+
+[ext_resource type="Texture2D" uid="uid://v443pkeu5xkv" path="res://Sprites/Solra/Void_Solra.png" id="1_lgxyo"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_vjljy"]
+
+[resource]
+script = ExtResource("2_vjljy")
+id = "solra_void"
+display_name = "Void Solra"
+description = "Hắn... trôi dạt trong hư không, cơ thể rã rời không còn chút gì cả. Nếu bạn trôi vào hư không, có chăng thấy được một thứ mật mã hắn để lại?"
+icon_texture = ExtResource("1_lgxyo")
+main_texture = ExtResource("1_lgxyo")
+interaction_type = 2
+correct_answer = "Void Is Not Bad"
+is_global_code = true
+difficulty = 768
+difficulty_rank_name = "Điên vcl"
+location_hint = "Phòng Kéo"

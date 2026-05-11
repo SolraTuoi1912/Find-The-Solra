@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgg2xr14yh3dl"]
+
+[ext_resource type="Script" uid="uid://c1kv5hmmnc2ts" path="res://Scripts/hazard_area.gd" id="1_fb3qm"]
+
+[node name="HazardArea" type="Area2D" groups=["hazard"]]
+script = ExtResource("1_fb3qm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

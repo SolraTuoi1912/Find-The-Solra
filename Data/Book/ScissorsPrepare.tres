@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://dxfrg8mh5homx"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_7tnoy"]
+
+[resource]
+script = ExtResource("1_7tnoy")
+book_id = "ScissorsPrepare"
+pages = Array[Dictionary]([{
+"text": "Tiến về phía bên phải, một thử thách đang chờ đón."
+}])

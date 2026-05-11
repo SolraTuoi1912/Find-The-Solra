@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SolraCameoResourceGroup" load_steps=14 format=3 uid="uid://v24ty02b82ge"]
+
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="1_dj7ob"]
+[ext_resource type="Resource" uid="uid://dafj5a1end03k" path="res://Data/Solra/Gatekeeper_Solra.tres" id="2_1fxbl"]
+[ext_resource type="Script" uid="uid://o2o2j6gk4jpp" path="res://Scripts/SolraCameoResourceGroup.gd" id="2_brhi3"]
+[ext_resource type="Resource" uid="uid://8ulmpygokg2t" path="res://Data/Solra/Morse_Solra.tres" id="3_fkx4r"]
+[ext_resource type="Resource" uid="uid://hls4d5kfuc3k" path="res://Data/Solra/Picture_Solra.tres" id="4_44ut3"]
+[ext_resource type="Resource" uid="uid://ssxlq6gkugxk" path="res://Data/Solra/Solra.tres" id="5_4vg06"]
+[ext_resource type="Resource" uid="uid://rk0r16ti83gy" path="res://Data/Solra/Vest_Solra.tres" id="6_sevw5"]
+[ext_resource type="Resource" uid="uid://c3o4y05k31lu5" path="res://Data/Solra/Void_Solra.tres" id="7_oy8uq"]
+[ext_resource type="Resource" uid="uid://pe67cue8dsy1" path="res://Data/Cameo/Akina.tres" id="8_aw31b"]
+[ext_resource type="Resource" uid="uid://c6pgproyg7h0k" path="res://Data/Cameo/Death.tres" id="9_reeg3"]
+[ext_resource type="Resource" uid="uid://co44xid0ab0uu" path="res://Data/Cameo/Gemi.tres" id="10_3j5wm"]
+[ext_resource type="Resource" uid="uid://kn57mc1s88fv" path="res://Data/Cameo/Hasami.tres" id="11_bujqx"]
+[ext_resource type="Resource" uid="uid://dp07rrmw4tt03" path="res://Data/Solra/Xor_Solra.tres" id="12_fkx4r"]
+
+[resource]
+script = ExtResource("2_brhi3")
+all_entries = Array[ExtResource("1_dj7ob")]([ExtResource("2_1fxbl"), ExtResource("3_fkx4r"), ExtResource("4_44ut3"), ExtResource("5_4vg06"), ExtResource("6_sevw5"), ExtResource("7_oy8uq"), ExtResource("8_aw31b"), ExtResource("9_reeg3"), ExtResource("10_3j5wm"), ExtResource("11_bujqx"), ExtResource("12_fkx4r")])

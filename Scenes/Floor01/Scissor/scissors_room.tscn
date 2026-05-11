@@ -1,0 +1,1156 @@
+[gd_scene load_steps=35 format=3 uid="uid://bhi6sxdyes4hl"]
+
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_y652c"]
+[ext_resource type="PackedScene" uid="uid://dhp2ubv6el6ap" path="res://Scenes/Floor01/Scissor/Secret Room Tunnel.tscn" id="2_jhxbc"]
+[ext_resource type="PackedScene" uid="uid://cp3pwyqshiu4q" path="res://Scenes/Floor01/Scissor/Room01.tscn" id="2_s83xg"]
+[ext_resource type="Texture2D" uid="uid://djdremysninmf" path="res://Sprites/Map/Others/spr_portal_strip8.png" id="3_42kqy"]
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="3_280l1"]
+[ext_resource type="PackedScene" uid="uid://bop0yxnxkt2x2" path="res://Scenes/Floor01/Scissor/Room02.tscn" id="3_qj5vv"]
+[ext_resource type="PackedScene" uid="uid://ccyyy81rd28eq" path="res://Scenes/Floor01/Scissor/SecretRoom01.tscn" id="3_u6osc"]
+[ext_resource type="PackedScene" uid="uid://bamylr61etnfl" path="res://Scenes/solra_cameo.tscn" id="4_42kqy"]
+[ext_resource type="PackedScene" uid="uid://dp0bryxoa1nfw" path="res://Scenes/Floor01/Scissor/SecretRoom02.tscn" id="4_k2h2f"]
+[ext_resource type="PackedScene" uid="uid://dcjfia1wnaurc" path="res://Scenes/Floor01/Scissor/Room03.tscn" id="4_ruq8x"]
+[ext_resource type="PackedScene" uid="uid://b1jdi0sv65ccu" path="res://Scenes/Floor01/Scissor/Room04.tscn" id="5_q3ob0"]
+[ext_resource type="Resource" uid="uid://kn57mc1s88fv" path="res://Data/Cameo/Hasami.tres" id="5_qj5vv"]
+[ext_resource type="PackedScene" uid="uid://1quxe86vufa3" path="res://Scenes/Floor01/Scissor/SecretRoomFinal.tscn" id="5_sx64h"]
+[ext_resource type="PackedScene" uid="uid://p6t7b7i7spwc" path="res://Scenes/Floor01/Scissor/Room05.tscn" id="6_gljs4"]
+[ext_resource type="AudioStream" uid="uid://dknujjs75dv72" path="res://Music/Limbus Company OST - Canto IX Battle Theme C (Studio EIM).mp3" id="6_s83xg"]
+[ext_resource type="PackedScene" uid="uid://jkcfvexqlow1" path="res://Scenes/portal.tscn" id="7_qj5vv"]
+[ext_resource type="Texture2D" uid="uid://mjf7a0by4mlw" path="res://Sprites/Puzzle/Semaphore.png" id="13_qwgil"]
+[ext_resource type="Resource" uid="uid://co44xid0ab0uu" path="res://Data/Cameo/Gemi.tres" id="15_ub53b"]
+[ext_resource type="PackedScene" uid="uid://bb5s2nqkst8cf" path="res://Scenes/Hazard/spike.tscn" id="18_lt41g"]
+[ext_resource type="PackedScene" uid="uid://by5tmqxsvqpbr" path="res://Scenes/Hazard/scissors.tscn" id="20_wg85r"]
+[ext_resource type="Script" uid="uid://7q052xnuix6i" path="res://Scripts/scissors_trigger_area.gd" id="21_q1xo0"]
+[ext_resource type="PackedScene" uid="uid://gymbyfulmgyp" path="res://Scenes/book.tscn" id="22_c71in"]
+[ext_resource type="Resource" uid="uid://b71bt6nw0xhyc" path="res://Data/Book/ScissorsIntroduce.tres" id="23_o67xl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruq8x"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3ob0"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gljs4"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhxbc"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6osc"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2h2f"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sx64h"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub53b"]
+atlas = ExtResource("3_42kqy")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lt41g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruq8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3ob0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gljs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhxbc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6osc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k2h2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sx64h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub53b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arvdh"]
+size = Vector2(96, 20)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_q1xo0"]
+vertices = PackedVector2Array(3810, 259.90625, 3707.0313, 259.07813, 3707.961, 28.828125, 3810, 27.15625, 2079.5625, 386, 2017.5078, 386, 1965.2734, 384.7422, 1777.7031, 271.97656, 2255.1406, 272.96875, 3295.1406, 448.77344, 3312.9922, 163.46094, 3315.9766, 2529.0234, 3292.8594, 283.75, 3868.3203, 542.90625, 3872.7422, 480.95313, 3905.211, 450.1328, 4158.2266, 446.8672, 4560.9297, 607.03125, 3134.1563, 287.09375, 3155.0625, 228.14063, 3153.9297, 383, 3131.8516, 444, 4319.047, 381.9297, 4399.5, 302.7578, 4463.2266, 304.2422, 3056.1406, 163.03125, 3216.3281, 220.67188, 4557.9297, 162.03906, 4461.758, 237.96875, 4317.953, 155.53906, 4402.4375, 243.90625, 3233.0703, 285.25, 3211.7188, 383, 3231.9297, 450.2422, 2076.539, 441.79688, 2258.1484, 478.14063, 2159.6094, 612.2422, 1904.5078, 386.2578, 1837.2578, 388.53125, 1907.5234, 447.79688, 1779, 385.46094, 1528.1797, 350.21875, 2670, 249.71094, 2995, 219.02344, 2995, 672.9219, 2525.25, 444.70313, 2523.7422, 384.5625, 2604.3203, 284.14844, 1711.2734, 416.96094, 1779, 445, 1709.75, 474.75, 4160.7813, 383.0703, 4156.7813, 383.03906, 4162.211, 317.40625, 1516.7891, 575.1172, 2163.5703, 641.96875, 1332.7422, 640.0078, 1324.75, 609.0078, 1331.9219, 572.8906, 4683.25, 380.34375, 4655, 382.28125, 4655, 223.97656, 4748.8125, 320.0078, 2347.9922, 2530.9688, 2347, 668.3125, 2413, 670.3125, 2350.1016, 476.85938, 2349.1016, 381.14844, 2417.789, 382.15625, 2435.75, 388.4375, 2437.2578, 447.28906, 2413, 606.78125, 1208.9297, 40.851563, 1452.9297, 37.148438, 1450.9297, 365.1328, 1205.9297, 486.59375, 1521.2188, 33.953125, 2256.8438, 31.039063, 2254.1406, 209.03906, 1773.2422, 211.03906, 1458.1094, 418.03906, 1457.1016, 509.21875, 1326, 512.25, 2515, 282.85938, 2413.2813, 322, 2349.1563, 322, 2353.8438, 31, 2515, 229.07031, 47.101563, 608, 52.890625, 29.09375, 1100.1328, 480.4375, 3411.0078, 2400.0078, 6865.9297, 2396.0078, 6865.0625, 2530, 3373.9766, 2530.9922, 3370.9922, 154.29688, 3408.9922, 164.54688, 3876.1016, 317.95313, 3873.1016, 30.898438, 4065.0313, 29.09375, 4066.039, 283.85938, 3903.789, 381.96094, 5584, 482.02344, 4812, 483.96875, 4812, 380.96875, 5519, 378.96875, 5584, 223.00781, 5519, 318.9922, 4687.672, 440.85156, 4751.8438, 481.0625, 4715.547, 489.35938, 2603.3125, 251.70313, 1963.7734, 443.2422, 2020.5313, 449.3672, 2670, 219.96875, 1835.7266, 445, 1094.1328, 38.898438, 4157, 224.61719, 4253.883, 158.45313, 4255.867, 313.42188, 4157, 285.14063, 1518.7891, 479.75, 4125.953, 222.61719, 4125.039, 32.976563, 2643.3594, 161.97656, 2642.3438, 189.61719, 2584.7969, 193.53125, 4652.9375, 610.96875, 4652.039, 444.92188, 4725.5703, 548.0469, 5714.961, 608.02344, 5645.9688, 542.9375, 5713.0313, 31.007813, 5647.0313, 157.96094, 3079.2734, 291.79688, 3048.8672, 668.1719, 3074.6875, 444, 2578.7188, 221.85938, 3649.0313, 31, 3500, 159.42188, 3650.0313, 319.04688, 3500, 610.96094, 3651.4531, 482.04688, 3648.5234, 545.1094)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8), PackedInt32Array(9, 10, 11), PackedInt32Array(10, 9, 12), PackedInt32Array(13, 14, 15, 16, 17), PackedInt32Array(18, 19, 20, 21), PackedInt32Array(22, 23, 24, 17), PackedInt32Array(25, 10, 26, 19), PackedInt32Array(27, 17, 24, 28), PackedInt32Array(23, 22, 29, 30), PackedInt32Array(26, 10, 12, 31), PackedInt32Array(32, 26, 31, 33), PackedInt32Array(34, 4, 8, 35, 36), PackedInt32Array(7, 6, 37), PackedInt32Array(38, 7, 37, 39), PackedInt32Array(7, 38, 40, 41), PackedInt32Array(42, 43, 44, 45, 46, 47), PackedInt32Array(48, 40, 49, 50), PackedInt32Array(22, 17, 16, 51), PackedInt32Array(51, 16, 52, 53), PackedInt32Array(54, 36, 55, 56, 57, 58), PackedInt32Array(59, 60, 61, 62), PackedInt32Array(63, 64, 65, 11), PackedInt32Array(66, 67, 68, 69, 70, 71), PackedInt32Array(72, 73, 74, 75), PackedInt32Array(76, 77, 78, 79), PackedInt32Array(41, 76, 79, 7), PackedInt32Array(41, 40, 48, 80, 74), PackedInt32Array(75, 74, 80, 81, 82), PackedInt32Array(83, 84, 85, 86, 87), PackedInt32Array(33, 9, 11), PackedInt32Array(57, 88, 89, 90), PackedInt32Array(91, 92, 93, 94), PackedInt32Array(91, 94, 95, 96), PackedInt32Array(97, 98, 99, 100, 101), PackedInt32Array(102, 103, 104, 105), PackedInt32Array(106, 102, 105, 107), PackedInt32Array(61, 106, 107, 62), PackedInt32Array(108, 59, 62, 109, 110), PackedInt32Array(47, 111, 42), PackedInt32Array(112, 6, 5, 113), PackedInt32Array(42, 114, 43), PackedInt32Array(83, 47, 46, 69, 68, 84), PackedInt32Array(115, 38, 39), PackedInt32Array(89, 116, 90), PackedInt32Array(57, 90, 75, 82, 58), PackedInt32Array(117, 118, 119, 53, 120), PackedInt32Array(54, 121, 50, 36), PackedInt32Array(117, 122, 123, 118), PackedInt32Array(120, 53, 52, 101, 100), PackedInt32Array(124, 125, 126, 86), PackedInt32Array(127, 128, 108, 110, 129), PackedInt32Array(130, 127, 129, 131), PackedInt32Array(132, 130, 131, 133), PackedInt32Array(123, 132, 133, 27), PackedInt32Array(123, 27, 28, 29), PackedInt32Array(36, 50, 49, 115, 39), PackedInt32Array(36, 39, 112, 113), PackedInt32Array(36, 113, 34), PackedInt32Array(71, 36, 35, 66), PackedInt32Array(25, 19, 18, 134), PackedInt32Array(135, 25, 134, 136), PackedInt32Array(11, 135, 136, 21, 33), PackedInt32Array(20, 32, 33, 21), PackedInt32Array(44, 135, 11), PackedInt32Array(45, 44, 11, 65, 71, 70), PackedInt32Array(126, 137, 87, 86), PackedInt32Array(10, 25, 124, 86, 138, 95), PackedInt32Array(96, 95, 138, 139), PackedInt32Array(139, 138, 140, 141), PackedInt32Array(28, 30, 29), PackedInt32Array(123, 29, 118), PackedInt32Array(140, 97, 101, 15, 14, 142), PackedInt32Array(141, 140, 142, 143), PackedInt32Array(17, 141, 143, 13)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(43, 19, 1104, 29, 1110, 471, 1196, 476, 1199, 31, 1463, 27, 1461, 353, 1518, 342, 1511, 24, 2267, 21, 2264, 219, 1784, 221, 1787, 262, 2265, 263, 2268, 468, 2340, 467, 2339, 371, 2407, 372, 2404, 332, 2339, 332, 2344, 21, 3659, 21, 3660, 309, 3866, 308, 3863, 21, 4075, 19, 4076, 274, 4147, 275, 4147, 234, 4116, 232, 4115, 23, 5723, 21, 5725, 618, 4643, 621, 4642, 436, 4677, 432, 4674, 391, 4645, 393, 4645, 214, 5594, 213, 5594, 492, 4802, 494, 4802, 371, 5509, 369, 5509, 329, 4759, 330, 4762, 489, 4727, 497, 4734, 538, 5636, 533, 5637, 168, 4568, 172, 4571, 617, 3490, 621, 3490, 170, 3419, 174, 3421, 2390, 6876, 2386, 6875, 2540, 3364, 2541, 3361, 166, 3323, 172, 3326, 2539, 2338, 2541, 2337, 658, 2403, 660, 2403, 617, 2171, 622, 2175, 652, 1325, 650, 1317, 619, 37, 618), PackedVector2Array(3089, 301, 3085, 434, 3122, 434, 3124, 298), PackedVector2Array(3165, 237, 3164, 373, 3202, 373, 3206, 232), PackedVector2Array(3243, 295, 3242, 440, 3285, 439, 3283, 294), PackedVector2Array(1341, 563, 1507, 565, 1509, 470, 1700, 465, 1701, 427, 1468, 428, 1467, 519, 1337, 522), PackedVector2Array(1789, 396, 1789, 435, 1826, 435, 1827, 398), PackedVector2Array(1915, 396, 1917, 437, 1954, 434, 1955, 395), PackedVector2Array(2028, 396, 2030, 438, 2067, 433, 2069, 396), PackedVector2Array(2447, 541, 2604, 541, 2603, 444, 2644, 447, 2644, 581, 2445, 579), PackedVector2Array(2446, 398, 2447, 437, 2515, 435, 2514, 395), PackedVector2Array(3698, 19, 3697, 269, 3820, 270, 3820, 17), PackedVector2Array(2525, 273, 2594, 274, 2593, 242, 2660, 240, 2660, 210, 3005, 209, 3005, 662, 3039, 659, 3046, 173, 2653, 172, 2652, 199, 2593, 203, 2587, 231, 2525, 238), PackedVector2Array(3661, 492, 3659, 535, 3859, 533, 3862, 491), PackedVector2Array(3914, 392, 3915, 440, 4148, 437, 4147, 393), PackedVector2Array(4412, 253, 4410, 293, 4453, 294, 4452, 249), PackedVector2Array(4172, 327, 4171, 373, 4309, 372, 4308, 166, 4264, 168, 4266, 323)])
+
+[node name="ScissorsRoom" type="Node2D"]
+script = ExtResource("1_y652c")
+
+[node name="Rooms" type="Node2D" parent="."]
+
+[node name="SecretRoom01" parent="Rooms" instance=ExtResource("2_jhxbc")]
+position = Vector2(2304, 640)
+
+[node name="SecretRoom02" parent="Rooms" instance=ExtResource("2_jhxbc")]
+position = Vector2(2304, 1280)
+
+[node name="SecretRoom03" parent="Rooms" instance=ExtResource("3_u6osc")]
+position = Vector2(2304, 1920)
+
+[node name="SecretRoom04" parent="Rooms" instance=ExtResource("4_k2h2f")]
+position = Vector2(3456, 1920)
+
+[node name="SecretRoom05" parent="Rooms" instance=ExtResource("4_k2h2f")]
+position = Vector2(4608, 1920)
+
+[node name="SecretRoom06" parent="Rooms" instance=ExtResource("5_sx64h")]
+position = Vector2(5760, 1920)
+
+[node name="Room01" parent="Rooms" instance=ExtResource("2_s83xg")]
+
+[node name="Room02" parent="Rooms" instance=ExtResource("3_qj5vv")]
+position = Vector2(1152, 0)
+
+[node name="Room03" parent="Rooms" instance=ExtResource("4_ruq8x")]
+position = Vector2(2304, 0)
+
+[node name="Room04" parent="Rooms" instance=ExtResource("5_q3ob0")]
+position = Vector2(3456, 0)
+
+[node name="Room05" parent="Rooms" instance=ExtResource("6_gljs4")]
+position = Vector2(4608, 0)
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="return_door" type="AnimatedSprite2D" parent="Others"]
+position = Vector2(125, 559)
+sprite_frames = SubResource("SpriteFrames_lt41g")
+
+[node name="Player" parent="Others" instance=ExtResource("3_280l1")]
+position = Vector2(86, 549)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="Label" type="Label" parent="Others"]
+texture_filter = 2
+offset_left = 1513.0
+offset_top = 2103.0
+offset_right = 1806.0
+offset_bottom = 2167.0
+theme_override_font_sizes/font_size = 46
+text = "-->"
+
+[node name="Sprite2D" type="Sprite2D" parent="Others"]
+position = Vector2(1850, 2105)
+scale = Vector2(0.4488226, 0.4505119)
+texture = ExtResource("13_qwgil")
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="Hasami" parent="SolraCameo" instance=ExtResource("4_42kqy")]
+position = Vector2(4869, 447.00003)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("5_qj5vv")
+
+[node name="Gemi" parent="SolraCameo" instance=ExtResource("4_42kqy")]
+position = Vector2(6818, 2496)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("15_ub53b")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[node name="spawn_entrance" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(125, 559)
+
+[node name="return_portal" parent="SpawnPoint" instance=ExtResource("7_qj5vv")]
+position = Vector2(125, 559)
+target_scene = "uid://f3e484qdbvsg"
+target_spawn_id = "spawn_from_scissor"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_s83xg")
+autoplay = true
+parameters/looping = true
+
+[node name="Hazard" type="Node2D" parent="."]
+
+[node name="SpikeUp" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(464, 608)
+scale = Vector2(2, 2)
+
+[node name="SpkieDown" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2464, 448)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpikeRight" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4128, 33)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpikeRight/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight1" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4128, 65)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight1/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight2" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4128, 97)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight2/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight3" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4128, 129)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight3/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight4" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5648, 192)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight4/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight5" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5648, 224)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight5/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpikeLeft" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4256, 193)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft2" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4256, 225)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft2/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft3" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5712, 320)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft3/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft4" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5712, 352)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft4/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft7" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5584, 224)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft7/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft8" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5584, 256)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft8/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft9" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5584, 288)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft9/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft10" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5584, 320)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft10/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpkieRight6" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5648, 416)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight6/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpkieRight7" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5648, 448)
+scale = Vector2(2, 2)
+frame = 1
+
+[node name="CollisionShape2D" parent="Hazard/SpkieRight7/HazardArea" index="0"]
+position = Vector2(-4, -4)
+
+[node name="SpikeLeft5" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5712, 544)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft5/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpikeLeft6" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5712, 576)
+scale = Vector2(2, 2)
+frame = 3
+
+[node name="CollisionShape2D" parent="Hazard/SpikeLeft6/HazardArea" index="0"]
+position = Vector2(4, -4)
+
+[node name="SpkieDown2" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2495, 448)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown2/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown3" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2672, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown3/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown4" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2704, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown4/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown5" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2736, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown5/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown6" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2864, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown6/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown7" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2896, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown7/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown8" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2928, 32)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown8/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown9" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3680, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown9/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown10" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3712, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown10/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown11" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3744, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown11/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown19" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3695, 2400)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown19/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown12" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3776, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown12/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown13" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3808, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown13/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown14" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3840, 320)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown14/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown15" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4096, 288)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown15/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown16" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4128, 288)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown16/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown17" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4752, 544)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown17/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpkieDown18" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4656, 448)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown18/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpikeUp2" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(496, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp3" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(528, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp4" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(560, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp45" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2768, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp46" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2800, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp47" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2832, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp48" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3696, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp49" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3728, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp50" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3760, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp51" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3792, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp52" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3824, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp53" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3856, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp54" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3888, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp55" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3920, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp56" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3952, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp76" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4000, 384)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp77" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4032, 384)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp57" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3984, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp58" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4016, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp59" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4048, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp60" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4080, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp61" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4112, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp62" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4144, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp63" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4176, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp64" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4208, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp65" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4240, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp66" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4271, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp67" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4303, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp68" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4335, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp69" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4367, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp70" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4399, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp71" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4431, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp72" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4463, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp73" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4495, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp74" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4527, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp75" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4559, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp78" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4784, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp79" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4816, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp80" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4848, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp99" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4912, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp100" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4944, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp101" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5040, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp102" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5072, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp103" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5168, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp104" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5200, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp105" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5296, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp106" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5328, 320)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp81" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4976, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp82" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5008, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp83" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5040, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp84" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5168, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp85" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5200, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp86" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5232, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp87" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5360, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp88" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5392, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp89" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5424, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp90" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5456, 160)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp107" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5520, 481)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp91" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5392, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp92" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5328, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp93" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5264, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp94" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5200, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp95" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5136, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp96" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5072, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp97" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5008, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp98" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4944, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp5" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(592, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp6" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(623, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp7" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(655, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp8" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(687, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp9" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(718, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp41" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(1584, 416)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp42" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(1616, 416)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp43" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2192, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp44" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2224, 608)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp10" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2352, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp11" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2384, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp12" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2416, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp13" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2448, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp14" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2480, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp15" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2512, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp16" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2544, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp17" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2576, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp18" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2608, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp19" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2640, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp20" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2672, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp21" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2704, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp22" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2736, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp23" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2768, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp24" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2800, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp25" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2832, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp26" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2864, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp27" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2896, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp28" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2928, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp29" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2960, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp30" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(2992, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp31" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3024, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp32" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3056, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp33" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3088, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp34" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3120, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp35" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3152, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp36" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3184, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp37" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3216, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp38" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3248, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp39" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3280, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp40" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3312, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp108" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3376, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp109" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3408, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp110" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3568, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp111" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3600, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp112" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3793, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp113" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3825, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpkieDown20" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4047, 2400)
+scale = Vector2(2, 2)
+frame = 2
+
+[node name="CollisionShape2D" parent="Hazard/SpkieDown20/HazardArea" index="0"]
+position = Vector2(0, -8)
+
+[node name="SpikeUp114" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3920, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp115" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(3952, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp116" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4145, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp117" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4177, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp118" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4496, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp119" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4528, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp125" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4720, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp126" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4784, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp127" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4848, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp128" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4912, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp129" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4976, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp130" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5040, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp131" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5104, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp132" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5168, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp133" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5328, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp134" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5360, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp135" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5392, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp136" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5424, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp137" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5456, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp138" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5616, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp139" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(5808, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp120" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4432, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp121" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4464, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp122" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4336, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp123" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4272, 2528)
+scale = Vector2(2, 2)
+
+[node name="SpikeUp124" parent="Hazard" instance=ExtResource("18_lt41g")]
+position = Vector2(4304, 2528)
+scale = Vector2(2, 2)
+
+[node name="Scissors" parent="Hazard" instance=ExtResource("20_wg85r")]
+position = Vector2(119, 120)
+scale = Vector2(3, 3)
+
+[node name="Scissors2" parent="Hazard" instance=ExtResource("20_wg85r")]
+position = Vector2(235, 115)
+scale = Vector2(3, 3)
+
+[node name="Scissors3" parent="Hazard" instance=ExtResource("20_wg85r")]
+position = Vector2(122, 214)
+scale = Vector2(3, 3)
+
+[node name="Area2D" type="Area2D" parent="Hazard"]
+position = Vector2(35, 0)
+script = ExtResource("21_q1xo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hazard/Area2D"]
+position = Vector2(784, 614)
+shape = SubResource("RectangleShape2D_arvdh")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_q1xo0")
+
+[node name="Book" type="Node2D" parent="."]
+
+[node name="Book" parent="Book" instance=ExtResource("22_c71in")]
+position = Vector2(244, 576)
+scale = Vector2(2, 2)
+book_resource = ExtResource("23_o67xl")
+book_color = "green"
+
+[editable path="Hazard/SpkieDown"]
+[editable path="Hazard/SpkieDown/HazardArea"]
+[editable path="Hazard/SpikeRight"]
+[editable path="Hazard/SpikeRight/HazardArea"]
+[editable path="Hazard/SpkieRight1"]
+[editable path="Hazard/SpkieRight1/HazardArea"]
+[editable path="Hazard/SpkieRight2"]
+[editable path="Hazard/SpkieRight2/HazardArea"]
+[editable path="Hazard/SpkieRight3"]
+[editable path="Hazard/SpkieRight3/HazardArea"]
+[editable path="Hazard/SpkieRight4"]
+[editable path="Hazard/SpkieRight4/HazardArea"]
+[editable path="Hazard/SpkieRight5"]
+[editable path="Hazard/SpkieRight5/HazardArea"]
+[editable path="Hazard/SpikeLeft"]
+[editable path="Hazard/SpikeLeft/HazardArea"]
+[editable path="Hazard/SpikeLeft2"]
+[editable path="Hazard/SpikeLeft2/HazardArea"]
+[editable path="Hazard/SpikeLeft3"]
+[editable path="Hazard/SpikeLeft3/HazardArea"]
+[editable path="Hazard/SpikeLeft4"]
+[editable path="Hazard/SpikeLeft4/HazardArea"]
+[editable path="Hazard/SpikeLeft7"]
+[editable path="Hazard/SpikeLeft7/HazardArea"]
+[editable path="Hazard/SpikeLeft8"]
+[editable path="Hazard/SpikeLeft8/HazardArea"]
+[editable path="Hazard/SpikeLeft9"]
+[editable path="Hazard/SpikeLeft9/HazardArea"]
+[editable path="Hazard/SpikeLeft10"]
+[editable path="Hazard/SpikeLeft10/HazardArea"]
+[editable path="Hazard/SpkieRight6"]
+[editable path="Hazard/SpkieRight6/HazardArea"]
+[editable path="Hazard/SpkieRight7"]
+[editable path="Hazard/SpkieRight7/HazardArea"]
+[editable path="Hazard/SpikeLeft5"]
+[editable path="Hazard/SpikeLeft5/HazardArea"]
+[editable path="Hazard/SpikeLeft6"]
+[editable path="Hazard/SpikeLeft6/HazardArea"]
+[editable path="Hazard/SpkieDown2"]
+[editable path="Hazard/SpkieDown2/HazardArea"]
+[editable path="Hazard/SpkieDown3"]
+[editable path="Hazard/SpkieDown3/HazardArea"]
+[editable path="Hazard/SpkieDown4"]
+[editable path="Hazard/SpkieDown4/HazardArea"]
+[editable path="Hazard/SpkieDown5"]
+[editable path="Hazard/SpkieDown5/HazardArea"]
+[editable path="Hazard/SpkieDown6"]
+[editable path="Hazard/SpkieDown6/HazardArea"]
+[editable path="Hazard/SpkieDown7"]
+[editable path="Hazard/SpkieDown7/HazardArea"]
+[editable path="Hazard/SpkieDown8"]
+[editable path="Hazard/SpkieDown8/HazardArea"]
+[editable path="Hazard/SpkieDown9"]
+[editable path="Hazard/SpkieDown9/HazardArea"]
+[editable path="Hazard/SpkieDown10"]
+[editable path="Hazard/SpkieDown10/HazardArea"]
+[editable path="Hazard/SpkieDown11"]
+[editable path="Hazard/SpkieDown11/HazardArea"]
+[editable path="Hazard/SpkieDown19"]
+[editable path="Hazard/SpkieDown19/HazardArea"]
+[editable path="Hazard/SpkieDown12"]
+[editable path="Hazard/SpkieDown12/HazardArea"]
+[editable path="Hazard/SpkieDown13"]
+[editable path="Hazard/SpkieDown13/HazardArea"]
+[editable path="Hazard/SpkieDown14"]
+[editable path="Hazard/SpkieDown14/HazardArea"]
+[editable path="Hazard/SpkieDown15"]
+[editable path="Hazard/SpkieDown15/HazardArea"]
+[editable path="Hazard/SpkieDown16"]
+[editable path="Hazard/SpkieDown16/HazardArea"]
+[editable path="Hazard/SpkieDown17"]
+[editable path="Hazard/SpkieDown17/HazardArea"]
+[editable path="Hazard/SpkieDown18"]
+[editable path="Hazard/SpkieDown18/HazardArea"]
+[editable path="Hazard/SpkieDown20"]
+[editable path="Hazard/SpkieDown20/HazardArea"]

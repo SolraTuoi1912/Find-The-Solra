@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://ddst25oir6qgo"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_p125c"]
+
+[resource]
+script = ExtResource("1_p125c")
+book_id = "tuto01"
+pages = Array[Dictionary]([{
+"text": "Chào bạn tới với Find The Solra! Đây là cuốn sách hướng dẫn đầu tiên của bạn, về các thao tác cơ bản trong game. \\nNhấn phím → để sang trang sau, ← để về lại trang trước."
+}, {
+"text": "Nhấn các phím mũi tên để di chuyển (trái phải và nhảy). Nhấn E để tương tác với các vật thể (sách, cửa, v.v). \\nSẽ chỉ có sách có thông báo nhấn E, các vật thể khác sẽ không có thông báo nhằm mục đích thiết kế bí mật."
+}, {
+"text": "Giờ bạn có thể chuyển qua cuốn sách tiếp theo để hiểu về mục tiêu của trò chơi."
+}])

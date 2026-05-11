@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://bippdsndbm4p8"]
+
+[ext_resource type="Script" uid="uid://bjm1hmiaggdwd" path="res://Scripts/collection_popup.gd" id="1_1xym4"]
+[ext_resource type="AudioStream" uid="uid://byye17gxsgh7u" path="res://Sfx/Collected.mp3" id="2_brkhe"]
+[ext_resource type="AudioStream" uid="uid://ve11e0xk6ntk" path="res://Sfx/Hard Collected.mp3" id="3_mfe31"]
+[ext_resource type="AudioStream" uid="uid://cudqmkyixvvxt" path="res://Sfx/Crazy Collected.mp3" id="4_8q5un"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_73yyf"]
+bg_color = Color(0, 0, 0, 0.7058824)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.92656803, 0.80382717, 1.1551381e-06, 1)
+
+[node name="CollectionPopup" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_1xym4")
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_brkhe")
+
+[node name="HardSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mfe31")
+
+[node name="CrazySFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_8q5un")
+
+[node name="MainBox" type="Panel" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -169.5
+offset_right = 169.5
+offset_bottom = 139.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_73yyf")
+
+[node name="CharIcon" type="TextureRect" parent="MainBox"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.5
+offset_top = 22.0
+offset_right = 112.5
+offset_bottom = 122.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="MainBox"]
+layout_mode = 0
+offset_left = 138.5
+offset_top = 31.0
+offset_right = 329.5
+offset_bottom = 54.0
+text = "Chúc mừng bạn đã nhận"
+
+[node name="CharName" type="Label" parent="MainBox"]
+layout_mode = 0
+offset_left = 153.5
+offset_top = 73.0
+offset_right = 318.5
+offset_bottom = 129.0
+text = "Tên Solra nào đó"
+horizontal_alignment = 1
+autowrap_mode = 3

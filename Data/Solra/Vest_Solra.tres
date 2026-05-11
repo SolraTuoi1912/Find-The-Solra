@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://rk0r16ti83gy"]
+
+[ext_resource type="Texture2D" uid="uid://cgnjn8rybodvd" path="res://Sprites/Solra/Vest_Solra.png" id="1_m4ugi"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_teh44"]
+
+[resource]
+script = ExtResource("2_teh44")
+id = "vest_solra"
+display_name = "Vest Solra"
+description = "Một Solra lịch sự hơn, ăn mặc chỉnh tề hơn. Trong tiếng Anh, để trở nên lịch sự, thì cần một \"từ ma thuật\" nào đó."
+icon_texture = ExtResource("1_m4ugi")
+main_texture = ExtResource("1_m4ugi")
+interaction_type = 2
+dialogue_text = "You can't claim me without saying 'the magic word'."
+correct_answer = "Please"
+is_global_code = true
+difficulty = 84
+difficulty_rank_name = "Dễ"
+location_hint = "Tầng 01"
+character_lore = "Một Solra lịch sự hơn, ăn mặc chỉnh tề hơn. Trong tiếng Anh, để trở nên lịch sự, thì cần một \"từ ma thuật\" nào đó."

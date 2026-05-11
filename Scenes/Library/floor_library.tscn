@@ -1,0 +1,74 @@
+[gd_scene load_steps=12 format=3 uid="uid://clv2c24eol8x6"]
+
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_2yr4p"]
+[ext_resource type="PackedScene" uid="uid://bi60rmbywn88p" path="res://Scenes/Library/LibraryRoom.tscn" id="2_6g4kj"]
+[ext_resource type="Texture2D" uid="uid://djdremysninmf" path="res://Sprites/Map/Others/spr_portal_strip8.png" id="3_8m1y5"]
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="3_ihrs7"]
+[ext_resource type="AudioStream" uid="uid://b7kvphpouew3u" path="res://Music/Loading (ChillPeach).mp3" id="4_6g4kj"]
+[ext_resource type="PackedScene" uid="uid://jkcfvexqlow1" path="res://Scenes/portal.tscn" id="5_7t7kc"]
+[ext_resource type="PackedScene" uid="uid://gymbyfulmgyp" path="res://Scenes/book.tscn" id="6_7t7kc"]
+[ext_resource type="Resource" uid="uid://dn8gvneq7aqii" path="res://Data/Book/Key1Flag.tres" id="7_bep5p"]
+[ext_resource type="Resource" uid="uid://dcx50vod0dhvq" path="res://Data/Book/Key2Key3.tres" id="8_qwtx7"]
+[ext_resource type="Resource" uid="uid://de8yn2xkujp1h" path="res://Data/Book/Key1Key2Key3.tres" id="9_xnq58"]
+[ext_resource type="Resource" uid="uid://fb3fp2qaocv2" path="res://Data/Book/BookOfHint.tres" id="10_awu7c"]
+
+[node name="FloorLibrary" type="Node2D"]
+script = ExtResource("1_2yr4p")
+
+[node name="Room" type="Node2D" parent="."]
+
+[node name="Room00" parent="Room" instance=ExtResource("2_6g4kj")]
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="return_door" type="Sprite2D" parent="Others"]
+position = Vector2(93, 560)
+texture = ExtResource("3_8m1y5")
+hframes = 8
+
+[node name="Player" parent="Others" instance=ExtResource("3_ihrs7")]
+position = Vector2(89, 556)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[node name="spawn_entrance" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(93, 560)
+
+[node name="return_portal" parent="SpawnPoint" instance=ExtResource("5_7t7kc")]
+position = Vector2(93, 560)
+target_scene = "uid://f3e484qdbvsg"
+target_spawn_id = "spawn_from_library"
+
+[node name="Book" type="Node2D" parent="."]
+
+[node name="1F" parent="Book" instance=ExtResource("6_7t7kc")]
+position = Vector2(320, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("7_bep5p")
+book_color = "black"
+
+[node name="23" parent="Book" instance=ExtResource("6_7t7kc")]
+position = Vector2(506, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("8_qwtx7")
+book_color = "black"
+
+[node name="123" parent="Book" instance=ExtResource("6_7t7kc")]
+position = Vector2(710, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("9_xnq58")
+book_color = "black"
+
+[node name="Book of Hint" parent="Book" instance=ExtResource("6_7t7kc")]
+position = Vector2(932, 579)
+scale = Vector2(2, 2)
+book_resource = ExtResource("10_awu7c")
+book_color = "black"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6g4kj")
+autoplay = true

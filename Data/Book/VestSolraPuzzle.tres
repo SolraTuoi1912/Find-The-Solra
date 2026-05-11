@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://b2e0nkhu7t4ls"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_rl6kn"]
+
+[resource]
+script = ExtResource("1_rl6kn")
+book_id = "vestsolrapuzzle"
+pages = Array[Dictionary]([{
+"text": "May I collect you?\\n\\nHave you said the magic word?\\n\\nHuh? Oh, to be formal?\\n\\nYes. Now adding the magic word at the end of the question."
+}])

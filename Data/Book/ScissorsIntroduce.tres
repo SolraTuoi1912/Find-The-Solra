@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://b71bt6nw0xhyc"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_xgher"]
+
+[resource]
+script = ExtResource("1_xgher")
+book_id = "ScissorsIntroduce"
+pages = Array[Dictionary]([{
+"text": "Chào mừng tới với parkour tân thủ!\\n\\nChà, thử thách cậu đó, Blue Guy. Nói thử xem nhảy qua 9 cái gai kia, rồi sau đó bọn kéo truy đuổi cậu tới chết, không biết cậu sẽ chết bao lần nhỉ?"
+}, {
+"image": "res://Sprites/BookArt/HasamiSign.png",
+"text": "Tôi chờ ông anh quản gia của tôi báo xem cậu chết bao lần, heh.\\n\\nKí tên\\nHasami Jidou"
+}])

@@ -1,0 +1,115 @@
+[gd_scene load_steps=18 format=3 uid="uid://c38dd0t03ufa"]
+
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_lr7dl"]
+[ext_resource type="PackedScene" uid="uid://c07o28aiex7or" path="res://Scenes/Limbo/limbo.tscn" id="2_k3q3g"]
+[ext_resource type="Texture2D" uid="uid://djdremysninmf" path="res://Sprites/Map/Others/spr_portal_strip8.png" id="3_0oyi2"]
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="3_r1nsl"]
+[ext_resource type="PackedScene" uid="uid://bamylr61etnfl" path="res://Scenes/solra_cameo.tscn" id="4_0oyi2"]
+[ext_resource type="Resource" uid="uid://c6pgproyg7h0k" path="res://Data/Cameo/Death.tres" id="5_0npqh"]
+[ext_resource type="AudioStream" uid="uid://v7unhgqvh7rp" path="res://Music/Nocturne (Bill Kiley and Justin Stander).mp3" id="6_k3q3g"]
+[ext_resource type="PackedScene" uid="uid://jkcfvexqlow1" path="res://Scenes/portal.tscn" id="7_0oyi2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0npqh"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i1h2"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gy1c7"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dv3pn"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikd6s"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k78na"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqt4e"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h05i"]
+atlas = ExtResource("3_0oyi2")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mb6o1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0npqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i1h2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gy1c7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dv3pn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikd6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k78na")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqt4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h05i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Floor Limbo" type="Node2D"]
+script = ExtResource("1_lr7dl")
+
+[node name="Rooms" type="Node2D" parent="."]
+
+[node name="Limbo" parent="Rooms" instance=ExtResource("2_k3q3g")]
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="Floor01 Gate" type="AnimatedSprite2D" parent="Others"]
+position = Vector2(541, 522)
+scale = Vector2(1.5234375, 1.6015625)
+sprite_frames = SubResource("SpriteFrames_mb6o1")
+
+[node name="Player" parent="Others" instance=ExtResource("3_r1nsl")]
+position = Vector2(78, 554)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="Death" parent="SolraCameo" instance=ExtResource("4_0oyi2")]
+position = Vector2(990.00006, 578)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("5_0npqh")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[node name="spawn_entrance" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(96, 531)
+
+[node name="floor01_portal" parent="SpawnPoint" instance=ExtResource("7_0oyi2")]
+position = Vector2(541, 522)
+scale = Vector2(2, 2)
+target_scene = "uid://f3e484qdbvsg"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_k3q3g")
+autoplay = true
+parameters/looping = true

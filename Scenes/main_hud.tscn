@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3diwuxe0ufu7"]
+
+[ext_resource type="PackedScene" uid="uid://b22ly8g3hcb87" path="res://Scenes/CodeBlockUI.tscn" id="1_lk74q"]
+[ext_resource type="Script" uid="uid://co4s1ssaed5ae" path="res://Scripts/main_hud.gd" id="1_tv1hi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tv1hi"]
+bg_color = Color(0.84737504, 0.7132421, 0.37630618, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtlnn"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkj85"]
+bg_color = Color(0.9999997, 0.5529613, 0.24127123, 1)
+
+[node name="MainHUD" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_tv1hi")
+
+[node name="CodeBlock" parent="." instance=ExtResource("1_lk74q")]
+
+[node name="CodeBlockButton" type="Button" parent="."]
+offset_right = 155.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_tv1hi")
+text = "Code Block"
+
+[node name="DeathButton" type="Button" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 41.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtlnn")
+text = "X_X"
+
+[node name="DeathConfirm" type="ConfirmationDialog" parent="."]
+oversampling_override = 1.0
+title = "Xác nhận chết"
+initial_position = 2
+size = Vector2i(300, 106)
+ok_button_text = "Tôi chắc!"
+dialog_text = "Bạn có chắc chắn muốn \"chết\" không? Hơi khó chịu đó nhe."
+dialog_autowrap = true
+cancel_button_text = "Thôi..."
+
+[node name="DeathOptionsPopup" type="ConfirmationDialog" parent="."]
+oversampling_override = 1.0
+title = "Hồi sinh"
+initial_position = 1
+size = Vector2i(367, 100)
+ok_button_text = "Hồi sinh tại Checkpoint"
+dialog_text = "Lựa chọn địa điểm hồi sinh."
+dialog_autowrap = true
+cancel_button_text = "Hồi sinh tại Limbo"
+
+[node name="SolrapediaButton" type="Button" parent="."]
+process_mode = 3
+offset_top = 48.0
+offset_right = 155.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_kkj85")
+text = "Solrapedia"
+
+[connection signal="pressed" from="CodeBlockButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="DeathButton" to="." method="_on_death_button_pressed"]
+[connection signal="confirmed" from="DeathConfirm" to="." method="_on_death_confirm_confirmed"]
+[connection signal="canceled" from="DeathOptionsPopup" to="." method="_on_death_options_popup_canceled"]
+[connection signal="confirmed" from="DeathOptionsPopup" to="." method="_on_death_options_popup_confirmed"]
+[connection signal="pressed" from="SolrapediaButton" to="." method="_on_solrapedia_button_pressed"]

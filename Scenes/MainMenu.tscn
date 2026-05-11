@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8fcrajodx1a7"]
+
+[ext_resource type="Script" uid="uid://bi8ghn8prnw2m" path="res://Scripts/main_menu.gd" id="1_tt5f1"]
+
+[node name="Control" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tt5f1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.014275197, 0.014275226, 0.014275208, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -50.0
+offset_right = 150.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1.7086417e-06, 0.53468823, 0.30741462, 1)
+theme_override_colors/font_focus_color = Color(0, 0.77324235, 0.38301766, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.35600036, 0.14719495, 1)
+theme_override_colors/font_hover_color = Color(1.8289685e-06, 0.6960838, 0.4835959, 1)
+theme_override_font_sizes/font_size = 64
+text = "START"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://cq4cgtnritth8"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_5sddr"]
+
+[resource]
+script = ExtResource("1_5sddr")
+book_id = "StaircaseCrossroad01"
+pages = Array[Dictionary]([{
+"text": "Rẽ trái là Picture Solra.\\n\\nRẽ phải là đường lên tầng 2."
+}])

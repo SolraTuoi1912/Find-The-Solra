@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://c6pgproyg7h0k"]
+
+[ext_resource type="Texture2D" uid="uid://38pmmlg04v87" path="res://Sprites/Cameo/Death.png" id="1_8jys5"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_xrkv1"]
+
+[resource]
+script = ExtResource("2_xrkv1")
+id = "death"
+item_type = 1
+display_name = "Death"
+description = "Cậu ta là một thần chết khá thân thiện. Cậu canh giữ phòng Limbo, cho những người đã chết có mong ước được sống mãnh liệt thêm một cơ hội."
+icon_texture = ExtResource("1_8jys5")
+main_texture = ExtResource("1_8jys5")
+dialogue_text = "Huh... You've died, right?"
+difficulty = 74
+difficulty_rank_name = "Dễ"
+location_hint = "Phòng Limbo"
+character_lore = "Cậu ta là một thần chết khá thân thiện. Cậu canh giữ phòng Limbo, cho những người đã chết có mong ước được sống mãnh liệt thêm một cơ hội."

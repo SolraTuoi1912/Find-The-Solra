@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=3 uid="uid://bsnovbq1fhcnk"]
+
+[ext_resource type="Script" uid="uid://c5ob3xwi4lmwg" path="res://Scripts/book_ui.gd" id="1_iloda"]
+[ext_resource type="Texture2D" uid="uid://csyvfnu4a83c4" path="res://Sprites/Map/BG/White.png" id="1_vuqbt"]
+[ext_resource type="FontFile" uid="uid://vfhabdbguul7" path="res://Font/SVN-Times New Roman.ttf" id="3_pek0a"]
+[ext_resource type="FontFile" uid="uid://blpskirryb20l" path="res://Font/SVN-Times New Roman Bold.ttf" id="4_sfbq7"]
+[ext_resource type="FontFile" uid="uid://dee3wiypgqqo0" path="res://Font/SVN-Times New Roman Bold Italic.ttf" id="5_k6m2n"]
+[ext_resource type="FontFile" uid="uid://cxxsvh3b6hv6u" path="res://Font/SVN-Times New Roman Italic.ttf" id="6_rrqa0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iloda"]
+bg_color = Color(3.7541986e-06, 0.8377265, 0.47910118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nymv3"]
+bg_color = Color(0.9999998, 0.1516906, 0.2572231, 1)
+
+[node name="BookUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_iloda")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.48235294)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(450, 600)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -300.0
+offset_right = 225.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vuqbt")
+patch_margin_left = 40
+patch_margin_top = 40
+patch_margin_right = 40
+patch_margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_pek0a")
+theme_override_fonts/bold_font = ExtResource("4_sfbq7")
+theme_override_fonts/bold_italics_font = ExtResource("5_k6m2n")
+theme_override_fonts/italics_font = ExtResource("6_rrqa0")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+bbcode_enabled = true
+text = "Solra Is Here"
+scroll_active = false
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 8
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Next" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.0
+offset_top = -30.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_iloda")
+
+[node name="Back" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -30.0
+offset_right = 30.0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nymv3")

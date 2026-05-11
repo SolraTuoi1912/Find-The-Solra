@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://dbqanxgro0rqh"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_kx1iy"]
+
+[resource]
+script = ExtResource("1_kx1iy")
+book_id = "picturesolrabook"
+pages = Array[Dictionary]([{
+"text": "Bức tranh Solra này đẹp nhỉ?"
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": ""
+}, {
+"text": "Đằng sau là thư viện"
+}])

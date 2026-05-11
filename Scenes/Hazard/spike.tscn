@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb5s2nqkst8cf"]
+
+[ext_resource type="Texture2D" uid="uid://bo1oeu8mqits1" path="res://Sprites/Hazard/16-bit-spike-Sheet.png" id="1_nkmet"]
+[ext_resource type="PackedScene" uid="uid://bgg2xr14yh3dl" path="res://Scenes/hazard_area.tscn" id="2_x80nc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkmet"]
+size = Vector2(6, 6)
+
+[node name="Spike" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_nkmet")
+hframes = 4
+region_rect = Rect2(0, 0, 64.07645, 16)
+
+[node name="HazardArea" parent="." instance=ExtResource("2_x80nc")]
+position = Vector2(0, 4)
+
+[node name="CollisionShape2D" parent="HazardArea" index="0"]
+shape = SubResource("RectangleShape2D_nkmet")
+
+[editable path="HazardArea"]

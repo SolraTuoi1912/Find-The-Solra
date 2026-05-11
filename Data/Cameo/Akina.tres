@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://pe67cue8dsy1"]
+
+[ext_resource type="Texture2D" uid="uid://dxdsanvfs8b5o" path="res://Sprites/Cameo/Akina.png" id="1_pefrt"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_t3p75"]
+
+[resource]
+script = ExtResource("2_t3p75")
+id = "akina"
+item_type = 1
+display_name = "Akina"
+description = "Em gái nuôi của Solra. Là một bé gái quỷ tinh nghịch, vui tính, và mạnh hơn thằng anh mình."
+icon_texture = ExtResource("1_pefrt")
+main_texture = ExtResource("1_pefrt")
+interaction_type = 2
+correct_answer = "The Red Halo"
+is_global_code = true
+difficulty = 5
+difficulty_rank_name = "Dễ"
+location_hint = "Tầng 01"
+character_lore = "Em gái nuôi của Solra. Là một bé gái quỷ tinh nghịch, vui tính, và mạnh hơn thằng anh mình."

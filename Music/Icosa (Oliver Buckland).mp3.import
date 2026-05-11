@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drcavh1nc556b"
+path="res://.godot/imported/Icosa (Oliver Buckland).mp3-006fe74f4a4fb8a3e05d7a7057022623.mp3str"
+
+[deps]
+
+source_file="res://Music/Icosa (Oliver Buckland).mp3"
+dest_files=["res://.godot/imported/Icosa (Oliver Buckland).mp3-006fe74f4a4fb8a3e05d7a7057022623.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

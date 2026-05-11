@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://by5tmqxsvqpbr"]
+
+[ext_resource type="Texture2D" uid="uid://5e3j5c6vfqtq" path="res://Sprites/Hazard/scissors.png" id="1_i1t6i"]
+[ext_resource type="Script" uid="uid://cb8ba0tbaxda" path="res://Scripts/scissors.gd" id="1_kntlv"]
+[ext_resource type="PackedScene" uid="uid://bgg2xr14yh3dl" path="res://Scenes/hazard_area.tscn" id="2_kntlv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kntlv"]
+radius = 3.0
+height = 14.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vh70e"]
+radius = 3.0
+height = 14.0
+
+[node name="Scissors" type="Area2D" groups=["Scissors"]]
+script = ExtResource("1_kntlv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5707964
+texture = ExtResource("1_i1t6i")
+
+[node name="HazardArea" parent="." instance=ExtResource("2_kntlv")]
+
+[node name="CollisionShape2D" parent="HazardArea" index="0"]
+position = Vector2(3, 0)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_kntlv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["hazard"]]
+position = Vector2(3, 0)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_vh70e")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[editable path="HazardArea"]

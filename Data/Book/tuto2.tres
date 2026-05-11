@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://pgqvoy0uk31j"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_00g1m"]
+
+[resource]
+script = ExtResource("1_00g1m")
+book_id = "tuto02"
+pages = Array[Dictionary]([{
+"text": "Mục tiêu trong game này là thu thập các Solra (cậu trai tóc vàng kia và các bản thể khác của cậu ta), cũng như các Cameo (các nhân vật khác xuất hiện trong tòa tháp)."
+}, {
+"text": "Nhấn vào Solrapedia để xem danh sách các Solra và Cameo"
+}, {
+"text": "Các Solra và Cameo chưa được thu thập sẽ bị ẩn"
+}, {
+"text": "Giờ hãy thu thập Solra bằng cách chạm vào Solra."
+}])

@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=3 uid="uid://e4m1sb6kgo24"]
+
+[ext_resource type="PackedScene" uid="uid://24ygvwisyoo8" path="res://Scenes/baseroom.tscn" id="1_px03f"]
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_u8dx5"]
+[ext_resource type="PackedScene" uid="uid://c2lrevewqqimb" path="res://Scenes/room_01.tscn" id="2_jqhi2"]
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="3_jqhi2"]
+[ext_resource type="PackedScene" uid="uid://bixt7u807dyhl" path="res://Scenes/room_02.tscn" id="4_dgeqe"]
+[ext_resource type="AudioStream" uid="uid://7w64he7fgook" path="res://Music/IWBTB Soundtrack - 06 - First World (Prehistorik 2).mp3" id="6_0o6h4"]
+[ext_resource type="PackedScene" uid="uid://bamylr61etnfl" path="res://Scenes/solra_cameo.tscn" id="6_3cxbb"]
+[ext_resource type="Resource" uid="uid://ssxlq6gkugxk" path="res://Data/Solra/Solra.tres" id="7_cmsau"]
+[ext_resource type="Resource" uid="uid://hls4d5kfuc3k" path="res://Data/Solra/Picture_Solra.tres" id="9_rbotj"]
+
+[node name="FloorTutorial" type="Node2D"]
+script = ExtResource("1_u8dx5")
+
+[node name="Room" type="Node2D" parent="."]
+
+[node name="Baseroom" parent="Room" instance=ExtResource("1_px03f")]
+
+[node name="Room01" parent="Room" instance=ExtResource("2_jqhi2")]
+position = Vector2(1152, 0)
+
+[node name="Room02" parent="Room" instance=ExtResource("4_dgeqe")]
+position = Vector2(1152, -639)
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="Player" parent="Others" instance=ExtResource("3_jqhi2")]
+position = Vector2(84, 511)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="Solra" parent="SolraCameo" instance=ExtResource("6_3cxbb")]
+position = Vector2(1799.0001, 546)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("7_cmsau")
+
+[node name="PictureSolra" parent="SolraCameo" instance=ExtResource("6_3cxbb")]
+position = Vector2(1642, -300)
+scale = Vector2(0.3, 0.3)
+solra_cameo_resource = ExtResource("9_rbotj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_0o6h4")
+autoplay = true
+parameters/looping = true

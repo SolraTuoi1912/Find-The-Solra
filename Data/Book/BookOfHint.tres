@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://fb3fp2qaocv2"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_oi8fx"]
+
+[resource]
+script = ExtResource("1_oi8fx")
+book_id = "bookofhint"
+pages = Array[Dictionary]([{
+"text": "This is a hint.\\n1F\\n23\\n123"
+}])

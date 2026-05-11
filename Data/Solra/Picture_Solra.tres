@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://hls4d5kfuc3k"]
+
+[ext_resource type="Texture2D" uid="uid://blttjvxbvwwww" path="res://Sprites/Solra/Picture_Solra.jpg" id="1_boqaj"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_fjpj8"]
+
+[resource]
+script = ExtResource("2_fjpj8")
+id = "solra_picture"
+display_name = "Picture Solra"
+description = "Một bức tranh về Solra đang ở trong rừng. Tác giả: Bánh Bơ Đường Quế"
+icon_texture = ExtResource("1_boqaj")
+main_texture = ExtResource("1_boqaj")
+dialogue_text = "You're good at parkour, aren't you?"
+difficulty = 50
+difficulty_rank_name = "Dễ"
+location_hint = "Tầng 01"
+character_lore = "Một bức tranh về Solra đang ở trong rừng. Tác giả: Bánh Bơ Đường Quế"

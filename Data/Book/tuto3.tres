@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://dd5trekx2sxxk"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_554rn"]
+
+[resource]
+script = ExtResource("1_554rn")
+book_id = "tuto03"
+pages = Array[Dictionary]([{
+"text": "Có những nhân vật phải nhập mã code mới có thể thu thập. Code sẽ được nhập trong Code Block (mở bằng nhấp chuột)"
+}, {
+"text": "Cô gái ở trong phòng này có mật mã là ‘The Red Halo’. Gõ mật mã này vào Code Block để nhận"
+}, {
+"text": "Sau này, bạn sẽ phải tự tìm kiếm mật mã của các nhân vật bạn không thể thu thập bằng cách chạm vào."
+}])

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dknujjs75dv72"
+path="res://.godot/imported/Limbus Company OST - Canto IX Battle Theme C (Studio EIM).mp3-15226c96dc801aedf4d6935e8cdaec0b.mp3str"
+
+[deps]
+
+source_file="res://Music/Limbus Company OST - Canto IX Battle Theme C (Studio EIM).mp3"
+dest_files=["res://.godot/imported/Limbus Company OST - Canto IX Battle Theme C (Studio EIM).mp3-15226c96dc801aedf4d6935e8cdaec0b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://dafj5a1end03k"]
+
+[ext_resource type="Texture2D" uid="uid://tx8s4mpwfdh3" path="res://Sprites/Solra/Gatekeeper_Solra.png" id="1_q3lwg"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_pfhh3"]
+
+[resource]
+script = ExtResource("2_pfhh3")
+id = "solra_gatekeeper"
+display_name = "Gatekeeper Solra"
+description = "Thằng gác cổng lên tầng 2. Vì là thằng canh giữ tầng 1, thanh niên có con thú cưng tên \"Oner\""
+icon_texture = ExtResource("1_q3lwg")
+main_texture = ExtResource("1_q3lwg")
+dialogue_text = "Sorry man. The second floor is still in construction."
+difficulty = 36
+difficulty_rank_name = "Dễ"
+location_hint = "Tầng 01"
+character_lore = "Thằng gác cổng lên tầng 2. Vì là thằng canh giữ tầng 1, thanh niên có con thú cưng tên \"Oner\""

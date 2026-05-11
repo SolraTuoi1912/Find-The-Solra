@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://8ulmpygokg2t"]
+
+[ext_resource type="Texture2D" uid="uid://3alnbhcyt07h" path="res://Sprites/Solra/Morse_Solra.png" id="1_gi2x0"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_cyqtf"]
+
+[resource]
+script = ExtResource("2_cyqtf")
+id = "solra_morse"
+display_name = "Morse Solra"
+description = "Trôi đi trong một không gian trắng xóa, cậu ta không còn nhận thức được gì. Có lẽ trong đầu cậu chỉ còn những tiếng 'bíp', lúc ngắn lúc dài."
+icon_texture = ExtResource("1_gi2x0")
+main_texture = ExtResource("1_gi2x0")
+interaction_type = 2
+dialogue_text = "You have come here to save me, right?"
+correct_answer = "SolraIsHere"
+is_global_code = true
+difficulty = 176
+difficulty_rank_name = "Trung Bình"
+location_hint = "Phòng Morse"
+character_lore = "Trôi đi trong một không gian trắng xóa, cậu ta không còn nhận thức được gì. Có lẽ trong đầu cậu chỉ còn những tiếng 'bíp', lúc ngắn lúc dài."

@@ -1,0 +1,353 @@
+[gd_scene load_steps=51 format=3 uid="uid://f3e484qdbvsg"]
+
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="1_4fmk8"]
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_lgkr3"]
+[ext_resource type="PackedScene" uid="uid://cc13xgca4ivs3" path="res://Scenes/Floor01/Room00.tscn" id="2_jg54p"]
+[ext_resource type="PackedScene" uid="uid://dta7e535pt4ib" path="res://Scenes/Floor01/Room01.tscn" id="3_k18ht"]
+[ext_resource type="PackedScene" uid="uid://dxqurpnwdx00" path="res://Scenes/Floor01/Room03.tscn" id="4_jkf5g"]
+[ext_resource type="AudioStream" uid="uid://drcavh1nc556b" path="res://Music/Icosa (Oliver Buckland).mp3" id="5_t3140"]
+[ext_resource type="PackedScene" uid="uid://g4vroayva8hg" path="res://Scenes/Floor01/Room04.tscn" id="5_xfld7"]
+[ext_resource type="PackedScene" uid="uid://crmvgghe8xr1c" path="res://Scenes/Floor01/Room05.tscn" id="6_vwf2g"]
+[ext_resource type="PackedScene" uid="uid://daviua3kcg60t" path="res://Scenes/Floor01/PictureRoom.tscn" id="7_kltfq"]
+[ext_resource type="PackedScene" uid="uid://c7kba6b1re6i7" path="res://Scenes/Floor01/Parkour1.tscn" id="8_pdxei"]
+[ext_resource type="PackedScene" uid="uid://bamylr61etnfl" path="res://Scenes/solra_cameo.tscn" id="9_hml6v"]
+[ext_resource type="PackedScene" uid="uid://h3us8iyp7j25" path="res://Scenes/Floor01/Parkour2.tscn" id="9_tuypw"]
+[ext_resource type="Resource" uid="uid://ssxlq6gkugxk" path="res://Data/Solra/Solra.tres" id="10_gu2it"]
+[ext_resource type="Texture2D" uid="uid://djdremysninmf" path="res://Sprites/Map/Others/spr_portal_strip8.png" id="11_es3wc"]
+[ext_resource type="Resource" uid="uid://pe67cue8dsy1" path="res://Data/Cameo/Akina.tres" id="11_gu2it"]
+[ext_resource type="Resource" uid="uid://rk0r16ti83gy" path="res://Data/Solra/Vest_Solra.tres" id="12_ae01k"]
+[ext_resource type="Resource" uid="uid://hls4d5kfuc3k" path="res://Data/Solra/Picture_Solra.tres" id="13_rxqxp"]
+[ext_resource type="Resource" uid="uid://dafj5a1end03k" path="res://Data/Solra/Gatekeeper_Solra.tres" id="14_rlrmf"]
+[ext_resource type="PackedScene" uid="uid://jkcfvexqlow1" path="res://Scenes/portal.tscn" id="17_bjvn4"]
+[ext_resource type="Resource" uid="uid://b7ep1cvq6so81" path="res://Data/Solra/Real_Life_Solra.tres" id="18_lpd5b"]
+[ext_resource type="PackedScene" uid="uid://gymbyfulmgyp" path="res://Scenes/book.tscn" id="21_smwwh"]
+[ext_resource type="Resource" uid="uid://dbqanxgro0rqh" path="res://Data/Book/Tutorial01.tres" id="22_2uh6s"]
+[ext_resource type="Resource" uid="uid://ddst25oir6qgo" path="res://Data/Book/tuto1.tres" id="23_67te0"]
+[ext_resource type="Resource" uid="uid://pgqvoy0uk31j" path="res://Data/Book/tuto2.tres" id="24_uippp"]
+[ext_resource type="Resource" uid="uid://dd5trekx2sxxk" path="res://Data/Book/tuto3.tres" id="25_f05fy"]
+[ext_resource type="Resource" uid="uid://b2e0nkhu7t4ls" path="res://Data/Book/VestSolraPuzzle.tres" id="26_ssiqd"]
+[ext_resource type="Resource" uid="uid://cq4cgtnritth8" path="res://Data/Book/StaircaseCrossroad.tres" id="27_g1lbl"]
+[ext_resource type="Resource" uid="uid://djdwgpafch8hc" path="res://Data/Book/DeathBook.tres" id="28_3lwrn"]
+[ext_resource type="PackedScene" uid="uid://bb5s2nqkst8cf" path="res://Scenes/Hazard/spike.tscn" id="28_22qof"]
+[ext_resource type="Resource" uid="uid://dxfrg8mh5homx" path="res://Data/Book/ScissorsPrepare.tres" id="29_d67kq"]
+[ext_resource type="Resource" uid="uid://c16nx8jai1lky" path="res://Data/Book/Floor01GuardBook.tres" id="30_211fm"]
+[ext_resource type="Resource" uid="uid://dmjk2qgv03jne" path="res://Data/Book/MorseBook.tres" id="31_majtc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lpd5b"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smwwh"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2uh6s"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67te0"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uippp"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f05fy"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssiqd"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1lbl"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_22qof"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lpd5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smwwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2uh6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67te0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uippp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f05fy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssiqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1lbl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_es3wc"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22qof"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lwrn"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d67kq"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_211fm"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_majtc"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i1eh"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynx05"]
+atlas = ExtResource("11_es3wc")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sr7hs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_es3wc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_22qof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lwrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d67kq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_211fm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_majtc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i1eh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynx05")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Floor01" type="Node2D"]
+script = ExtResource("1_lgkr3")
+
+[node name="Room" type="Node2D" parent="."]
+
+[node name="Room00" parent="Room" instance=ExtResource("2_jg54p")]
+
+[node name="Room01" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(1152, 0)
+
+[node name="Room02" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(2304, 0)
+
+[node name="Room03" parent="Room" instance=ExtResource("4_jkf5g")]
+position = Vector2(3456, 0)
+
+[node name="Room04" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(4608, 0)
+
+[node name="Room05" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(5760, 0)
+
+[node name="Room06" parent="Room" instance=ExtResource("5_xfld7")]
+position = Vector2(6912, 0)
+
+[node name="Room07" parent="Room" instance=ExtResource("6_vwf2g")]
+position = Vector2(3455, -640)
+
+[node name="Room08" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(4608, -640)
+
+[node name="Room09" parent="Room" instance=ExtResource("3_k18ht")]
+position = Vector2(5760, -640)
+
+[node name="Room10" parent="Room" instance=ExtResource("5_xfld7")]
+position = Vector2(6912, -640)
+
+[node name="Room11" parent="Room" instance=ExtResource("7_kltfq")]
+position = Vector2(0, -640)
+
+[node name="Room12" parent="Room" instance=ExtResource("8_pdxei")]
+position = Vector2(2304, -640)
+
+[node name="Room13" parent="Room" instance=ExtResource("9_tuypw")]
+position = Vector2(1152, -640)
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="Scissor Gate" type="AnimatedSprite2D" parent="Others"]
+position = Vector2(7474, 560)
+sprite_frames = SubResource("SpriteFrames_22qof")
+frame_progress = 0.08572954
+
+[node name="Morse Gate" type="AnimatedSprite2D" parent="Others"]
+position = Vector2(6336, -80)
+sprite_frames = SubResource("SpriteFrames_sr7hs")
+
+[node name="Player" parent="Others" instance=ExtResource("1_4fmk8")]
+position = Vector2(87, 519)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="Solra" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(638, 576)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("10_gu2it")
+
+[node name="Akina" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(1960, 575)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("11_gu2it")
+
+[node name="VestSolra" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(2968, 577)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("12_ae01k")
+
+[node name="PictureSolra" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(116, -389)
+scale = Vector2(0.25, 0.25)
+solra_cameo_resource = ExtResource("13_rxqxp")
+
+[node name="GatekeeperSolra" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(7195, -65)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("14_rlrmf")
+
+[node name="RealLifeSolra" parent="SolraCameo" instance=ExtResource("9_hml6v")]
+position = Vector2(-127, -754)
+solra_cameo_resource = ExtResource("18_lpd5b")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[node name="spawn_entrance" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(115, 519)
+
+[node name="spawn_from_scissor" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(7474, 560)
+
+[node name="scissor_portal" parent="SpawnPoint" instance=ExtResource("17_bjvn4")]
+position = Vector2(7474, 560)
+collision_layer = 2
+target_scene = "uid://bhi6sxdyes4hl"
+
+[node name="spawn_from_morse" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(6336, -80)
+
+[node name="morse_portal" parent="SpawnPoint" instance=ExtResource("17_bjvn4")]
+position = Vector2(6336, -80)
+target_scene = "uid://c1m75x21nr7eu"
+
+[node name="library_portal" parent="SpawnPoint" instance=ExtResource("17_bjvn4")]
+position = Vector2(116, -389)
+scale = Vector2(2, 2)
+target_scene = "uid://clv2c24eol8x6"
+
+[node name="spawn_from_library" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(116, -389)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_t3140")
+autoplay = true
+parameters/looping = true
+
+[node name="Book" type="Node2D" parent="."]
+
+[node name="PictureSolraBook" parent="Book" instance=ExtResource("21_smwwh")]
+texture_filter = 1
+position = Vector2(937, -61)
+scale = Vector2(2, 2)
+book_resource = ExtResource("22_2uh6s")
+book_color = "yellow"
+
+[node name="Tutorial01" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(179, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("23_67te0")
+
+[node name="Tutorial02" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(401, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("24_uippp")
+
+[node name="Tutorial03" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(1506, 580)
+scale = Vector2(2, 2)
+book_resource = ExtResource("25_f05fy")
+
+[node name="VestSolraPuzzle" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(2855, 579)
+scale = Vector2(2, 2)
+book_resource = ExtResource("26_ssiqd")
+book_color = "black"
+
+[node name="StaircaseCrossroad" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(4154, -108)
+scale = Vector2(2, 2)
+book_resource = ExtResource("27_g1lbl")
+book_color = "gray"
+
+[node name="DeathBook" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(5012, 579)
+scale = Vector2(2, 2)
+book_resource = ExtResource("28_3lwrn")
+
+[node name="ScissorPrepare" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(6366, 579)
+scale = Vector2(2, 2)
+book_resource = ExtResource("29_d67kq")
+book_color = "green"
+
+[node name="Floor01GuardBook" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(7512, -58)
+scale = Vector2(2, 2)
+book_resource = ExtResource("30_211fm")
+book_color = "yellow"
+
+[node name="MorseBook" parent="Book" instance=ExtResource("21_smwwh")]
+position = Vector2(6172, -60)
+scale = Vector2(2, 2)
+book_resource = ExtResource("31_majtc")
+book_color = "yellow"
+
+[node name="Hazard" type="Node2D" parent="."]
+
+[node name="Spike" parent="Hazard" instance=ExtResource("28_22qof")]
+position = Vector2(5296, 608)
+scale = Vector2(2, 2)

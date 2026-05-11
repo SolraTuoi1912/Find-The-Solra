@@ -1,0 +1,125 @@
+[gd_scene load_steps=7 format=3 uid="uid://wt8wg1srl42w"]
+
+[ext_resource type="Script" uid="uid://dg3wi80qvpbqk" path="res://Scripts/Solrapedia.gd" id="1_1gpxy"]
+[ext_resource type="Script" uid="uid://ctwv8ib554shq" path="res://Scripts/solrapedia_root.gd" id="1_vvrq5"]
+[ext_resource type="PackedScene" uid="uid://siqr3cpd87a2" path="res://Scenes/icon_button.tscn" id="2_2lflf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r76wq"]
+bg_color = Color(0.7733392, 0.08992689, 1.347661e-06, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvrq5"]
+bg_color = Color(0, 0.76549125, 0.42730263, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pt1p8"]
+bg_color = Color(0.698028, 0, 0.05823355, 1)
+
+[node name="Solrapedia" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_vvrq5")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_1gpxy")
+icon_template_scene = ExtResource("2_2lflf")
+
+[node name="Background" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9547085, 0.5749758, 0.32249516, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MainLayout" type="HBoxContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeftPanel" type="VBoxContainer" parent="Root/MainLayout"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.77
+
+[node name="Header" type="HBoxContainer" parent="Root/MainLayout/LeftPanel"]
+layout_mode = 2
+
+[node name="SearchBar" type="LineEdit" parent="Root/MainLayout/LeftPanel/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.54
+placeholder_text = "Character name"
+
+[node name="OptionButton" type="OptionButton" parent="Root/MainLayout/LeftPanel/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Root/MainLayout/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SolraList" type="GridContainer" parent="Root/MainLayout/LeftPanel/ScrollContainer"]
+layout_mode = 2
+columns = 7
+
+[node name="RightPanel" type="VBoxContainer" parent="Root/MainLayout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Close Button" type="Button" parent="Root/MainLayout/RightPanel"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r76wq")
+
+[node name="BigIcon" type="TextureRect" parent="Root/MainLayout/RightPanel"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+expand_mode = 4
+stretch_mode = 5
+
+[node name="CharName" type="Label" parent="Root/MainLayout/RightPanel"]
+layout_mode = 2
+text = "Name Placeholder"
+horizontal_alignment = 1
+
+[node name="Difficulty" type="ProgressBar" parent="Root/MainLayout/RightPanel"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_vvrq5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_pt1p8")
+max_value = 1000.0
+rounded = true
+show_percentage = false
+
+[node name="DifficultyLevel" type="Label" parent="Root/MainLayout/RightPanel"]
+layout_mode = 2
+text = "Level Placeholder"
+horizontal_alignment = 1
+
+[node name="Location" type="Label" parent="Root/MainLayout/RightPanel"]
+layout_mode = 2
+text = "Location Placeholder"
+horizontal_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="Root/MainLayout/RightPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Description / Hint Placeholder"
+
+[connection signal="pressed" from="Root/MainLayout/RightPanel/Close Button" to="." method="_on_close_button_pressed"]

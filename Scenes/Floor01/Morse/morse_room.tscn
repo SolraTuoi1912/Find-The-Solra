@@ -1,0 +1,158 @@
+[gd_scene load_steps=19 format=3 uid="uid://c1m75x21nr7eu"]
+
+[ext_resource type="Script" uid="uid://bug1n8lahnfwd" path="res://Scripts/floor_tutorial.gd" id="1_3rtui"]
+[ext_resource type="PackedScene" uid="uid://bniamhe8aqjat" path="res://Scenes/Floor01/Morse/Room01.tscn" id="2_ma01k"]
+[ext_resource type="PackedScene" uid="uid://bypoju8whfjxy" path="res://Scenes/player.tscn" id="3_6kyvn"]
+[ext_resource type="PackedScene" uid="uid://ci8p8dclh45u2" path="res://Scenes/Floor01/Morse/Room02.tscn" id="3_ma01k"]
+[ext_resource type="Texture2D" uid="uid://djdremysninmf" path="res://Sprites/Map/Others/spr_portal_strip8.png" id="4_b7u0o"]
+[ext_resource type="PackedScene" uid="uid://bamylr61etnfl" path="res://Scenes/solra_cameo.tscn" id="4_wjq1c"]
+[ext_resource type="Resource" uid="uid://8ulmpygokg2t" path="res://Data/Solra/Morse_Solra.tres" id="5_b7u0o"]
+[ext_resource type="AudioStream" uid="uid://lthwvpwlyjvv" path="res://Music/Wind Sound SOUND EFFECT.mp3" id="7_6kyvn"]
+[ext_resource type="PackedScene" uid="uid://jkcfvexqlow1" path="res://Scenes/portal.tscn" id="8_b7u0o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63a5j"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dednf"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyohq"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0qiw"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43l6p"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33en6"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8i7pj"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_so5hp"]
+atlas = ExtResource("4_b7u0o")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0o0ee"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63a5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dednf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyohq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0qiw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43l6p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33en6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8i7pj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_so5hp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MorseRoom" type="Node2D"]
+script = ExtResource("1_3rtui")
+
+[node name="Rooms" type="Node2D" parent="."]
+
+[node name="Room01" parent="Rooms" instance=ExtResource("2_ma01k")]
+
+[node name="Room02" parent="Rooms" instance=ExtResource("3_ma01k")]
+position = Vector2(1152, 0)
+
+[node name="Room03" parent="Rooms" instance=ExtResource("3_ma01k")]
+position = Vector2(2304, 0)
+
+[node name="Room04" parent="Rooms" instance=ExtResource("3_ma01k")]
+position = Vector2(3456, 0)
+
+[node name="Room05" parent="Rooms" instance=ExtResource("3_ma01k")]
+position = Vector2(4608, 0)
+
+[node name="Room06" parent="Rooms" instance=ExtResource("2_ma01k")]
+position = Vector2(6912, 0)
+scale = Vector2(-1, 1)
+
+[node name="Others" type="Node2D" parent="."]
+
+[node name="return_door" type="AnimatedSprite2D" parent="Others"]
+position = Vector2(165, 559)
+sprite_frames = SubResource("SpriteFrames_0o0ee")
+
+[node name="Player" parent="Others" instance=ExtResource("3_6kyvn")]
+position = Vector2(105, 550)
+
+[node name="Camera2D" type="Camera2D" parent="Others"]
+
+[node name="Hint" type="Label" parent="Others"]
+offset_left = 1298.0
+offset_top = 114.0
+offset_right = 1338.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "... --- .-.. .-. .- .. ... .... . .-. ."
+
+[node name="Label" type="Label" parent="Others"]
+offset_left = 2588.0
+offset_top = 234.0
+offset_right = 3197.0
+offset_bottom = 344.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "Nhìn quen chứ?"
+
+[node name="Label2" type="Label" parent="Others"]
+offset_left = 4277.0
+offset_top = 334.0
+offset_right = 4478.0
+offset_bottom = 444.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "Gõ đi"
+
+[node name="SolraCameo" type="Node2D" parent="."]
+
+[node name="MorseSolra" parent="SolraCameo" instance=ExtResource("4_wjq1c")]
+position = Vector2(6713.0005, 576)
+scale = Vector2(3, 3)
+solra_cameo_resource = ExtResource("5_b7u0o")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[node name="spawn_entrance" type="Marker2D" parent="SpawnPoint"]
+position = Vector2(165, 559)
+
+[node name="return_portal" parent="SpawnPoint" instance=ExtResource("8_b7u0o")]
+position = Vector2(165, 559)
+target_scene = "uid://f3e484qdbvsg"
+target_spawn_id = "spawn_from_morse"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_6kyvn")
+autoplay = true
+parameters/looping = true

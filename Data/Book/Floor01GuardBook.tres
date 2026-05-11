@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://c16nx8jai1lky"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_wcous"]
+
+[resource]
+script = ExtResource("1_wcous")
+book_id = "Floor01GuardBook"
+pages = Array[Dictionary]([{
+"image": "res://Sprites/BookArt/GatekeeperMaintenance.png",
+"text": "Xin lỗi nhé, tầng 2 chưa xây xong. Khi nào xây xong tui nói cho :0\\n\\nKí tên\\nGatekeeper Solra"
+}])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://dmjk2qgv03jne"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_fnupg"]
+
+[resource]
+script = ExtResource("1_fnupg")
+book_id = "MorseBook"
+pages = Array[Dictionary]([{
+"text": "Phòng gió thổi vi vu\\nCó chàng trai đang ngủ\\nNằm giữa dòng mật mã\\nAn nghỉ giấc ngàn thu?"
+}])

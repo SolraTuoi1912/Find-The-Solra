@@ -1,0 +1,228 @@
+[gd_scene load_steps=30 format=3 uid="uid://gymbyfulmgyp"]
+
+[ext_resource type="Script" uid="uid://d2k7s0i4u5ljx" path="res://Scripts/book.gd" id="1_0vt1r"]
+[ext_resource type="Texture2D" uid="uid://cdkyroinyaf2i" path="res://Sprites/Puzzle/books_byBatuhan.png" id="1_khdek"]
+[ext_resource type="Texture2D" uid="uid://ct7kr8ml8qnu2" path="res://Sprites/Puzzle/books_byBatuhan_flipped.png" id="2_0vt1r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr7b7"]
+atlas = ExtResource("1_khdek")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgncb"]
+atlas = ExtResource("1_khdek")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uu3s8"]
+atlas = ExtResource("1_khdek")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jx0ys"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(320, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7p7k3"]
+atlas = ExtResource("1_khdek")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djh34"]
+atlas = ExtResource("1_khdek")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77dt5"]
+atlas = ExtResource("1_khdek")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1bli"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(288, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltm2x"]
+atlas = ExtResource("1_khdek")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jh8o"]
+atlas = ExtResource("1_khdek")
+region = Rect2(256, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfyeo"]
+atlas = ExtResource("1_khdek")
+region = Rect2(256, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33p6p"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vt1r"]
+atlas = ExtResource("1_khdek")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfgky"]
+atlas = ExtResource("1_khdek")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nstcm"]
+atlas = ExtResource("1_khdek")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhfrj"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(256, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lebdj"]
+atlas = ExtResource("1_khdek")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87l1f"]
+atlas = ExtResource("1_khdek")
+region = Rect2(128, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w070k"]
+atlas = ExtResource("1_khdek")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2dwy"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(192, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jy4s3"]
+atlas = ExtResource("1_khdek")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_me3cj"]
+atlas = ExtResource("1_khdek")
+region = Rect2(224, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1a33"]
+atlas = ExtResource("1_khdek")
+region = Rect2(224, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya6h1"]
+atlas = ExtResource("2_0vt1r")
+region = Rect2(96, 192, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tfgky"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr7b7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgncb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uu3s8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jx0ys")
+}],
+"loop": true,
+"name": &"black",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7p7k3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djh34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77dt5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1bli")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltm2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jh8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfyeo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33p6p")
+}],
+"loop": true,
+"name": &"gray",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vt1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfgky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nstcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhfrj")
+}],
+"loop": true,
+"name": &"green",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lebdj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87l1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w070k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2dwy")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jy4s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_me3cj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1a33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya6h1")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nstcm"]
+radius = 22.022715
+
+[node name="Book" type="Area2D"]
+script = ExtResource("1_0vt1r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_tfgky")
+animation = &"red"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nstcm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -37.0
+offset_top = -29.0
+offset_right = 37.0
+offset_bottom = -6.0
+theme_override_font_sizes/font_size = 8
+text = "Nhấn E để mở sách"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BookData" load_steps=2 format=3 uid="uid://djdwgpafch8hc"]
+
+[ext_resource type="Script" uid="uid://cvgmwi54gtwe4" path="res://Scripts/BookData.gd" id="1_qjurg"]
+
+[resource]
+script = ExtResource("1_qjurg")
+book_id = "DeathBook"
+pages = Array[Dictionary]([{
+"text": "Trong trường hợp bạn bị mắc kẹt hoặc rơi vào một cái hố vô tận? Bạn có thể reset bản thân bằng cách bấm vào nút góc trái dưới."
+}, {
+"text": "Phía trước bạn là gai. Bạn sẽ chết nếu bạn chạm phải nó, tất nhiên rồi."
+}, {
+"text": "Trong game này, Blue Guy chạm cái gì nguy hiểm là ‘tèo’. Nên cẩn thận nha."
+}])

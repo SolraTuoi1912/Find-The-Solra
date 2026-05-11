@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://dp07rrmw4tt03"]
+
+[ext_resource type="Texture2D" uid="uid://do7iydpewxwws" path="res://Sprites/Solra/Xor_Solra.png" id="1_y7t6e"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_makrv"]
+
+[resource]
+script = ExtResource("2_makrv")
+id = "xor_solra"
+display_name = "X0r_501ra"
+icon_texture = ExtResource("1_y7t6e")
+main_texture = ExtResource("1_y7t6e")
+interaction_type = 2
+correct_answer = "{flag:the_x0ring_0f_501ra}"
+is_global_code = true
+difficulty = 912
+difficulty_rank_name = "???"
+location_hint = "Thư viện"
+character_lore = "Ở một thế giới song song nơi Solra là một thành viên ở lớp An Toàn Tài Năng..."

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SolraCameoResource" load_steps=3 format=3 uid="uid://ssxlq6gkugxk"]
+
+[ext_resource type="Texture2D" uid="uid://me73hi5dohw5" path="res://Sprites/Solra/Solra.png" id="1_a5d8i"]
+[ext_resource type="Script" uid="uid://bw0ujq0kjyx6v" path="res://Scripts/SolraCameoResource.gd" id="2_l5bpc"]
+
+[resource]
+script = ExtResource("2_l5bpc")
+id = "solra"
+display_name = "Solra"
+description = "Bản gốc. Một thanh niên ngày code, đêm làm thợ săn tiền thưởng."
+icon_texture = ExtResource("1_a5d8i")
+main_texture = ExtResource("1_a5d8i")
+difficulty_rank_name = "Dễ"
+location_hint = "Tầng 01"
+character_lore = "Bản gốc. Một thanh niên ngày code, đêm làm thợ săn tiền thưởng."
