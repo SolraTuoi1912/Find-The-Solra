@@ -7,6 +7,7 @@
 script = ExtResource("2_makrv")
 id = "xor_solra"
 display_name = "X0r_501ra"
+description = "Ở một thế giới song song nơi Solra là một thành viên ở lớp An Toàn Tài Năng..."
 icon_texture = ExtResource("1_y7t6e")
 main_texture = ExtResource("1_y7t6e")
 interaction_type = 2
